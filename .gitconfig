@@ -2,18 +2,27 @@
 	name = Name
 	email = email@email.com
 [core]  
-    editor = nano 
+    editor = 'code' --wait
+	#editor = nano 
+	#editor = 'subl' --wait
+
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --abbrev-commit
+	cob = checkout -b
+  	
+	undo = reset HEAD~1 --mixed
+  
+  	amend = commit -a --amend
 	
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 	# Get the current branch name (not so useful in itself, but used in
 	# other aliases)
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
-	
+
 	# Push the current branch to the remote "origin", and set it to track
 	# the upstream branch
 	publish = "!git push -u origin $(git branch-name)"
-	
+
 	# Delete any branches that have been merged into master
 	# See also: https://gist.github.com/robmiller/5133264
 	delete-merged = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
@@ -23,5 +32,5 @@
 
 	# renaming local and remote branch
 	rename = "!f() { \
-						git branch -m \"$1\" \"$2\" && git push origin :\"$1\" && git push --set-upstream origin \"$2\"; \
-					};f"
+		git branch -m \"$1\" \"$2\" && git push origin :\"$1\" && git push --set-upstream origin \"$2\"; \
+	};f"
