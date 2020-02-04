@@ -34,3 +34,6 @@
 	rename = "!f() { \
 		git branch -m \"$1\" \"$2\" && git push origin :\"$1\" && git push --set-upstream origin \"$2\"; \
 	};f"
+
+	# handy list of not merged branches
+	blist = "for-each-ref --sort=committerdate refs/heads/ --format='%(color: red)%(committerdate:short) %(color: green)%(refname:short)' --no-merged master"
