@@ -11,6 +11,7 @@ brew "gradle"
 brew "kotlin"
 brew "zsh"
 brew "awscli"
+brew "terraform"
 
 
 cask "ankiapp-anki"
