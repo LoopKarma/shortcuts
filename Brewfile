@@ -4,7 +4,7 @@ tap "homebrew/core"
 
 #alfred workflow dependencies
 brew "php" 
-
+brew "k9s"
 brew "bat"
 brew "docker-compose", link: false
 brew "gradle"
