@@ -1,12 +1,18 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+
+#alfred workflow dependencies
+brew "php" 
+
 brew "bat"
 brew "docker-compose", link: false
 brew "gradle"
 brew "kotlin"
 brew "zsh"
 brew "awscli"
+
+
 cask "ankiapp-anki"
 cask "dash"
 cask "ableton-live-suite"
@@ -20,11 +26,14 @@ cask "insomnia"
 cask "dictionaries"
 cask "little-snitch"
 cask "focusrite-control"
+cask "1password"
+cask "1password-cli"
 cask "iterm2"
 cask "nordvpn"
 cask "jetbrains-toolbox"
 cask "meetingbar"
 cask "rectangle"
+cask "pocket-casts"
 cask "notion"
 cask "plex-media-player"
 cask "slack"
