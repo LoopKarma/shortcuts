@@ -12,6 +12,7 @@ brew "kotlin"
 brew "zsh"
 brew "awscli"
 brew "terraform"
+brew "pyenv"
 
 
 cask "ankiapp-anki"
