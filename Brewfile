@@ -14,7 +14,7 @@ brew "awscli"
 brew "terraform"
 brew "pyenv"
 
-
+cask "the-unarchiver"
 cask "ankiapp-anki"
 cask "dash"
 cask "ableton-live-suite"
