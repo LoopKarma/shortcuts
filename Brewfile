@@ -13,6 +13,7 @@ brew "zsh"
 brew "awscli"
 brew "terraform"
 brew "pyenv"
+brew "aws-iam-authenticator"
 
 cask "the-unarchiver"
 cask "ankiapp-anki"
