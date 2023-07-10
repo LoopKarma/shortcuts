@@ -2,6 +2,9 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 
+#to have "brew cu"
+tap "buo/cask-upgrade" 
+
 #alfred workflow dependencies
 brew "php" 
 brew "k9s"
