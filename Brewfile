@@ -7,16 +7,26 @@ tap "buo/cask-upgrade"
 
 #alfred workflow dependencies
 brew "php" 
-brew "k9s"
+
+# tools
 brew "bat"
-brew "docker-compose", link: false
-brew "gradle"
-brew "kotlin"
+brew "jq"
 brew "zsh"
+brew "docker-compose", link: false
+
+# devops
+brew "k9s"
 brew "awscli"
 brew "terraform"
 brew "pyenv"
 brew "aws-iam-authenticator"
+brew "awscli"
+
+#javae
+brew "jenv"
+brew "gradle"
+brew "kotlin"
+
 
 cask "the-unarchiver"
 cask "ankiapp-anki"
