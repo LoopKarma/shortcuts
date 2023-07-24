@@ -1,3 +1,5 @@
+# run this from the folder with Brewfile and command `brew bundle`
+
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
